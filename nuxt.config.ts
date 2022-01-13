@@ -2,7 +2,7 @@ import { defineNuxtConfig } from 'nuxt3'
 
 export default defineNuxtConfig({
   meta: {
-    title: 'Vitesse Nuxt 3',
+    title: '玄学361',
   },
   buildModules: [
     '@vueuse/nuxt',
