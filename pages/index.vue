@@ -7,13 +7,11 @@
 <script setup>
 import { testAPI } from '~~/server/api/common'
 
-const { data } = await useFetch(testAPI, {
-  method: 'POST',
-  params: {
-    holder: '233',
-  },
+onBeforeUnmount(async() => {
+  const { data } = await useFetch(testAPI, {
+    method: 'GET',
+  })
+  localStorage.setItem('kjok', JSON.stringify(data.value))
 })
-
-console.log(data.value)
 
 </script>
