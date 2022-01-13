@@ -6,6 +6,7 @@
     "start": "node .output/server/index.mjs"
   },
   "dependencies": {
+    "normalize.css": "^8.0.1",
     "pinia": "^2.0.9"
   },
   "devDependencies": {
